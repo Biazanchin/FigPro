@@ -1,0 +1,46 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2024;
+  padding: 4.7rem 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav {
+    display: flex;
+    gap: 3.7rem;
+    a {
+      position: relative;
+      color: #514b4b;
+      font-size: 1.6rem;
+      font-weight: bold;
+      line-height: 155.3%;
+      letter-spacing: 0.96px;
+      &.active {
+        color: var(--BLACK);
+        &:before {
+          content: "";
+          width: 4px;
+          height: 3.2rem;
+          background: url("../../assets/Line.svg") no-repeat center center;
+          position: absolute;
+          left: 50%;
+          margin-left: -2px;
+          top: -36px;
+        }
+      }
+      &:hover {
+        color: var(--BLACK);
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+}
