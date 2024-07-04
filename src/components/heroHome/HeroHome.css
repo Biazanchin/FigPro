@@ -1,0 +1,91 @@
+.s-hero {
+  position: relative;
+  width: 100%;
+  height: 95.3rem;
+  background: url("../../assets/bg-hero.png") no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  .left-text {
+    width: 100%;
+    max-width: 62.8rem;
+    padding-top: 29.2rem;
+    .title {
+      margin-bottom: 4rem;
+      h1 {
+        color: #868686;
+        font-size: 10.5rem;
+        line-height: 72%;
+        span {
+          font-family: "Road Rage", sans-serif;
+          color: var(--BLACK-PRIMARY);
+        }
+      }
+      img {
+        margin-top: -2rem;
+      }
+    }
+    p {
+      color: #8e8e8e;
+      font-size: 1.6rem;
+      line-height: 155.3%;
+      margin-bottom: 4.3rem;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      span {
+        color: var(--BLACK-PRIMARY);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--YELLOW);
+        font-family: "Road Rage", sans-serif;
+        font-size: 4rem;
+        letter-spacing: 2px;
+      }
+    }
+    .users {
+      margin-top: 10.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          background-color: var(--WHITE);
+          border: 2px solid var(--YELLOW);
+          border-radius: 50%;
+          width: 4.7rem;
+          height: 4.7rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:not(:first-child) {
+            margin-left: -1.5rem;
+          }
+        }
+      }
+      strong {
+        color: var(--BLACK-SECONDARY);
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 155.3%;
+      }
+    }
+  }
+  .ilustra {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  @media (max-width: 1700px) {
+    .ilustra {
+      right: -20rem;
+    }
+  }
+  @media (max-width: 1440px) {
+    .ilustra {
+      right: -36rem;
+    }
+  }
+}
