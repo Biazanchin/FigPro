@@ -1,4 +1,4 @@
-import owl from "../../assets/owl1.png";
+import owl from "/owl1.png";
 import "./Info.css";
 
 const Info = () => {
