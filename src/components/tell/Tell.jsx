@@ -1,5 +1,6 @@
 import "./Tell.css";
 import frog from "/frog.png";
+import arrow from "../../assets/arrow-img.png";
 
 const Tell = () => {
   return (
@@ -22,6 +23,7 @@ const Tell = () => {
             </p>
             <p>Check out some of our sticker gallery to get even more hyped.</p>
           </div>
+          <img src={arrow} alt="arrow" className="arrow" />
         </div>
       </div>
     </section>

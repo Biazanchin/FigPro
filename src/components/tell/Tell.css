@@ -42,5 +42,10 @@
         }
       }
     }
+    .arrow {
+      position: absolute;
+      bottom: -32rem;
+      right: 2.2rem;
+    }
   }
 }
