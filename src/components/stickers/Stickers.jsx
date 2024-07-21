@@ -1,24 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import ghost from "../../assets/cartoon-ghost.svg";
 import Cards from "../cards/Cards";
+import { StickerContext } from "../../context/StickerContext";
 import "./Stickers.css";
 
 const Stickers = () => {
-  const [stickers, setStickers] = useState([]);
-
-  useEffect(() => {
-    const fetchStickers = async () => {
-      try {
-        const response = await fetch("http://localhost:5000/stickers");
-        const data = await response.json();
-        setStickers(data);
-      } catch (error) {
-        console.log("Error fetching stickers: ", error);
-      }
-    };
-    fetchStickers();
-  }, []);
+  const { stickers } = useContext(StickerContext);
 
   return (
     <section className="s-stickers">
