@@ -1,27 +1,14 @@
-import { useEffect, useState } from "react";
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 import dolar from "../../assets/dolar.png";
 import heartEmpty from "../../assets/heart.png";
 import heartFilled from "../../assets/heart2.png";
 import username from "../../assets/username.png";
 import "./Cards.css";
 
-const Cards = () => {
-  const [stickers, setStickers] = useState([]);
+const Cards = ({ stickers }) => {
   const [hoveredPriceId, setHoveredPriceId] = useState(null);
   const [favorites, setFavorites] = useState([]);
-
-  useEffect(() => {
-    const fetchStickers = async () => {
-      try {
-        const response = await fetch("http://localhost:5000/stickers");
-        const data = await response.json();
-        setStickers(data);
-      } catch (error) {
-        console.log("Error fetching stickers: ", error);
-      }
-    };
-    fetchStickers();
-  }, []);
 
   const toggleFavorite = (event, stickerId) => {
     event.preventDefault();
@@ -33,7 +20,7 @@ const Cards = () => {
   };
 
   return (
-    <div className="all">
+    <div>
       {stickers.map((sticker) => (
         <div key={sticker.id} className="card">
           <div className="content">
