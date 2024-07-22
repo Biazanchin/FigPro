@@ -1,14 +1,10 @@
 .btn-primary {
-  position: absolute;
-  left: 50%;
-  bottom: -2.4rem;
-  margin-left: -13.3rem;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   justify-content: center;
   background-color: var(--YELLOW);
-  padding: 1.9rem 3.7rem 1.9rem 5.2rem;
+  padding: 0.9rem 3.7rem 0.9rem 5.2rem;
   transition: background-color 0.3s ease;
   &:hover {
     background-color: var(--BLACK-PRIMARY);
