@@ -1,5 +1,4 @@
-import "@splidejs/react-splide/css";
-import Home from "./page/home";
+import Home from "./pages/home";
 import { StickerProvider } from "./context/StickerContext";
 
 function App() {
