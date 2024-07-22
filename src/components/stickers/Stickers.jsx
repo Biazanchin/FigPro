@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 import ghost from "../../assets/cartoon-ghost.svg";
 import Cards from "../cards/Cards";
 import { StickerContext } from "../../context/StickerContext";
