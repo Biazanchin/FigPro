@@ -44,7 +44,9 @@ const Steps = () => {
           <div className="shadow"></div>
         </div>
       </div>
-      <Button>Lets Start</Button>
+      <div className="button">
+        <Button>Lets Start</Button>
+      </div>
     </section>
   );
 };

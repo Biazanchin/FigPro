@@ -80,4 +80,10 @@
       z-index: -1;
     }
   }
+  .button {
+    position: absolute;
+    left: 50%;
+    bottom: -2.4rem;
+    margin-left: -13.3rem;
+  }
 }
