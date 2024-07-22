@@ -1,3 +1,5 @@
+import CallTA from "../components/cta/Cta";
+import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import HeroHome from "../components/heroHome/HeroHome";
 import Info from "../components/info/Info";
@@ -14,6 +16,8 @@ const Home = () => {
       <Steps />
       <Tell />
       <Stickers />
+      <CallTA />
+      <Footer />
     </div>
   );
 };
