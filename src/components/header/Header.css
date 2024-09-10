@@ -9,6 +9,9 @@ header {
     align-items: center;
     justify-content: space-between;
   }
+  .btn-mobile {
+    display: none;
+  }
   nav {
     display: flex;
     gap: 3.7rem;
@@ -41,5 +44,17 @@ header {
     display: flex;
     align-items: center;
     gap: 3rem;
+  }
+  @media (max-width: 560px) {
+    padding: 3rem 0;
+    .btn-mobile {
+      display: block;
+    }
+    .logo {
+      max-width: 15.9rem;
+    }
+    nav {
+      display: none;
+    }
   }
 }

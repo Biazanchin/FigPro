@@ -7,7 +7,10 @@ const Header = () => {
   return (
     <header>
       <div className="container">
-        <img src={logo} alt="Logo" />
+        <button className="btn-mobile">
+          <img src="../../assets/menu.png" alt="hamburguer" />
+        </button>
+        <img src={logo} alt="Logo" className="logo" />
         <nav>
           <a href="#" className="active">
             HOME
