@@ -20,13 +20,7 @@ Instale todas as dependências
 npm install
 ```
 
-Rode o json-server
-
-```bash
-npm run server
-```
-
-Abra um novo terminal e rode o projeto em sua máquina, se tudo estiver certo você deve conseguir acessa-lo na localhost:5173
+Rode o projeto em sua máquina, se tudo estiver certo você deve conseguir acessa-lo na localhost:5173
 
 ```bash
 npm run dev
@@ -38,4 +32,3 @@ npm run dev
 - JavaScript
 - Splide
 - Firebase
-- Json server
