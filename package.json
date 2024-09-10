@@ -6,14 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "server": "json-server --watch db/db.json --port 5000",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
-    "json-server": "^1.0.0-beta.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

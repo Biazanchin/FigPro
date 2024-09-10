@@ -1,14 +1,11 @@
-import { useContext } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import ghost from "../../assets/cartoon-ghost.svg";
 import Cards from "../cards/Cards";
-import { StickerContext } from "../../context/StickerContext";
+import { sticker } from "../../../db/db";
 import "./Stickers.css";
 
 const Stickers = () => {
-  const { stickers } = useContext(StickerContext);
-
   return (
     <section className="s-stickers">
       <div className="container">
@@ -31,9 +28,9 @@ const Stickers = () => {
               speed: 800,
             }}
           >
-            {stickers &&
-              stickers.length > 0 &&
-              stickers.map((sticker) => (
+            {sticker &&
+              sticker.length > 0 &&
+              sticker.map((sticker) => (
                 <SplideSlide key={sticker.id}>
                   <Cards stickers={[sticker]} />
                 </SplideSlide>
