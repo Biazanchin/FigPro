@@ -1,6 +1,7 @@
 import logo from "../../assets/logo.svg";
 import search from "../../assets/search-2905.svg";
 import user from "../../assets/sign-out-3300.svg";
+import menu from "../../assets/menu.png";
 import "./Header.css";
 
 const Header = () => {
@@ -8,7 +9,7 @@ const Header = () => {
     <header>
       <div className="container">
         <button className="btn-mobile">
-          <img src="../../assets/menu.png" alt="hamburguer" />
+          <img src={menu} alt="hamburguer" />
         </button>
         <img src={logo} alt="Logo" className="logo" />
         <nav>
