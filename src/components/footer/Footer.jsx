@@ -1,5 +1,6 @@
 import "./Footer.css";
 import logo from "../../assets/FIG.svg";
+import logofooter from "../../assets/logo-footer.png";
 
 const Footer = () => {
   return (
@@ -7,7 +8,8 @@ const Footer = () => {
       <div className="container">
         <div className="first-area">
           <div className="left">
-            <img src={logo} alt="logo" />
+            <img src={logofooter} alt="logofooter" className="logo-footer" />
+            <img src={logo} alt="logo" className="logo" />
             <p>
               With over 500,000 active users worldwide, turning creativity into
               collectibles. Unleash your imagination with FigPro!

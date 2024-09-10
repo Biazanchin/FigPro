@@ -10,6 +10,9 @@ footer {
     .left {
       flex: 1;
       max-width: 60rem;
+      .logo-footer {
+        display: none;
+      }
       p {
         font-size: 1.5rem;
         font-weight: 400;
@@ -67,6 +70,47 @@ footer {
       font-size: 1.5rem;
       line-height: 155.3%;
       letter-spacing: -1.05px;
+    }
+  }
+  @media (max-width: 991px) {
+    .first-area {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+      text-align: center;
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo-footer {
+          display: block;
+        }
+        .logo {
+          display: none;
+        }
+      }
+      .right {
+        ul {
+          li {
+            &:not(:last-child) {
+              margin-right: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 568px) {
+    .first-area {
+      .left {
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .second-area {
+      flex-direction: column;
+      gap: 8px;
     }
   }
 }
