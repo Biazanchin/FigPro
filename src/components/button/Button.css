@@ -26,4 +26,10 @@
   img {
     transition: filter 0.3s ease;
   }
+  @media (max-width: 560px) {
+    padding: 1.1rem 3.6rem 1.1rem 3.6rem;
+    span {
+      font-size: 2.2rem;
+    }
+  }
 }
