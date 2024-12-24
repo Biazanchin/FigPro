@@ -2,10 +2,6 @@
 
 O FigPRO é uma loja de adesivos virtuais fictícia. Ela é uma Landing Page inspirada em um design do [Figma](https://www.figma.com/design/sfknwWFWB6DF3Kd9RrfTMQ/Figpro?node-id=0-1&t=YYBGp49zf7PPwUHg-0). Esse repositório serve para eu treinar os meus conhecimentos da biblioteca React.
 
-### Situação 📈
-
-No momento o projeto está em DESENVOLVIMENTO
-
 ### Instalação ⚙️
 
 Faça o clone do projeto em sua IDE de preferência
@@ -31,3 +27,5 @@ npm run dev
 - React
 - JavaScript
 - Splide
+
+### Visualização 👀

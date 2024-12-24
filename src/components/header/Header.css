@@ -1,14 +1,13 @@
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2024;
   padding: 4.7rem 0;
+  background-color: #f8f8f8;
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .btn-mobile {
+    display: none;
   }
   nav {
     display: flex;
@@ -42,5 +41,23 @@ header {
     display: flex;
     align-items: center;
     gap: 3rem;
+    transition: opacity 0.3s ease;
+    button {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    padding: 3rem 0;
+    .btn-mobile {
+      display: block;
+    }
+    .logo {
+      max-width: 15.9rem;
+    }
+    nav {
+      display: none;
+    }
   }
 }

@@ -1,13 +1,17 @@
 import logo from "../../assets/logo.svg";
 import search from "../../assets/search-2905.svg";
 import user from "../../assets/sign-out-3300.svg";
+import menu from "../../assets/menu.png";
 import "./Header.css";
 
 const Header = () => {
   return (
-    <header>
+    <header className="fixed">
       <div className="container">
-        <img src={logo} alt="Logo" />
+        <button className="btn-mobile">
+          <img src={menu} alt="hamburguer" />
+        </button>
+        <img src={logo} alt="Logo" className="logo" />
         <nav>
           <a href="#" className="active">
             HOME

@@ -1,0 +1,93 @@
+.s-stickers {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding-top: 11.1rem;
+  padding-bottom: 8.3rem;
+  .title {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    .subtitle {
+      position: absolute;
+      top: -2rem;
+      left: -2rem;
+      color: var(--YELLOW);
+      text-align: center;
+      font-family: "Rock Salt", cursive;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 155.3%;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      transform: rotate(-8deg);
+    }
+    h2 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 3.8rem;
+      font-size: 15rem;
+      font-weight: 400;
+      line-height: 0.7;
+      letter-spacing: 1.2rem;
+      text-transform: uppercase;
+      span {
+        font-family: "Road Rage", sans-serif;
+        z-index: 1;
+      }
+      img {
+        position: absolute;
+        right: 11.1rem;
+        width: 21%;
+      }
+    }
+  }
+  .splide-wrapper {
+    width: 100%;
+    .splide__slide {
+      padding: 1rem;
+      margin-top: 15rem;
+    }
+    .splide__arrow {
+      background: var(--YELLOW);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8rem;
+      svg {
+        fill: #000;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .splide-wrapper .splide__slide {
+      margin-top: 12rem;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 20rem;
+    padding-bottom: 6rem;
+    .title .subtitle {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .splide-wrapper {
+      .splide__arrow {
+        width: 30px;
+        height: 30px;
+      }
+      .splide__slide {
+        margin-top: 10rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+footer {
+  background-color: var(--BLACK);
+  color: #9c9c9c;
+  padding-top: 4.8rem;
+  padding-bottom: 5.5rem;
+  .first-area {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .left {
+      flex: 1;
+      max-width: 60rem;
+      .logo-footer {
+        display: none;
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 155, 3%;
+        margin-top: 2.2rem;
+      }
+    }
+    .right {
+      flex: 1;
+      max-width: 27rem;
+      h3 {
+        opacity: 0.8;
+        color: var(--WHITE);
+        font-family: "Roboto Mono", monospace;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 155.3%;
+        letter-spacing: 1.62px;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          &:not(:last-child) {
+            border-right: 1px solid #9c9c9c;
+            padding-right: 1.6rem;
+          }
+          a {
+            color: #9c9c9c;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 155.3%;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+            &:hover {
+              opacity: 1;
+              color: var(--WHITE);
+            }
+          }
+        }
+      }
+    }
+  }
+  .second-area {
+    border-top: 1px solid #282828;
+    margin-top: 4.1rem;
+    padding-top: 4.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      color: #5c5c5c;
+      font-size: 1.5rem;
+      line-height: 155.3%;
+      letter-spacing: -1.05px;
+    }
+  }
+  @media (max-width: 991px) {
+    .first-area {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+      text-align: center;
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo-footer {
+          display: block;
+        }
+        .logo {
+          display: none;
+        }
+      }
+      .right {
+        ul {
+          li {
+            &:not(:last-child) {
+              margin-right: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 568px) {
+    .first-area {
+      .left {
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .second-area {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}

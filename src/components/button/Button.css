@@ -1,0 +1,35 @@
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  background-color: var(--YELLOW);
+  padding: 0.9rem 3.7rem 0.9rem 5.2rem;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: var(--BLACK-PRIMARY);
+    span {
+      color: var(--WHITE);
+    }
+    img {
+      filter: invert(1);
+    }
+  }
+  span {
+    color: var(--BLACK-PRIMARY);
+    font-family: "Road Rage", sans-serif;
+    font-size: 4.6rem;
+    font-weight: 400;
+    letter-spacing: 2.3px;
+    transition: color 0.3s ease;
+  }
+  img {
+    transition: filter 0.3s ease;
+  }
+  @media (max-width: 560px) {
+    padding: 1.1rem 3.6rem 1.1rem 3.6rem;
+    span {
+      font-size: 2.2rem;
+    }
+  }
+}
