@@ -20,7 +20,7 @@ const Cards = ({ stickers }) => {
   };
 
   return (
-    <div>
+    <div className="all">
       {stickers.map((sticker) => (
         <div key={sticker.id} className="card">
           <div className="content">

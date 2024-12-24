@@ -48,4 +48,72 @@
       right: 2.2rem;
     }
   }
+  @media (max-width: 1200px) {
+    padding: 10rem 0;
+    .title {
+      h2 {
+        font-size: 31rem;
+      }
+    }
+    .text {
+      margin-top: -17rem;
+      .arrow {
+        bottom: -20rem;
+        right: 8.2rem;
+        max-width: 30rem;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .title {
+      h2 {
+        letter-spacing: 14.54px;
+        font-size: 22rem;
+      }
+    }
+    .text {
+      flex-direction: column;
+      align-items: center;
+      margin-top: -14rem;
+      .description {
+        padding-bottom: 0;
+        max-width: 90%;
+        text-align: center;
+      }
+      .arrow {
+        bottom: -30rem;
+        right: 11.2rem;
+        max-width: 25rem;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    .title {
+      h4 {
+        font-size: 1.6rem;
+        margin-bottom: 1.4rem;
+      }
+      h2 {
+        font-size: 14rem;
+        letter-spacing: 5.58px;
+      }
+    }
+    .text {
+      margin-top: -9rem;
+      gap: 3.4rem;
+      img {
+        max-width: 24.4rem;
+      }
+      .description {
+        max-width: 100%;
+        p {
+          font-size: 1.3rem;
+          text-align: left;
+        }
+      }
+      .arrow {
+        margin-right: -10rem;
+      }
+    }
+  }
 }

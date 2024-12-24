@@ -62,4 +62,98 @@
   @media (min-width: 1441px) {
     background-size: cover;
   }
+  @media (max-width: 1200px) {
+    .title {
+      h2 {
+        font-size: 32.1rem;
+        font-weight: 400;
+        line-height: 0.7;
+        letter-spacing: 25.41px;
+      }
+    }
+    .illustra {
+      &.hawk {
+        max-width: 20rem;
+      }
+      &.tiger {
+        max-width: 25rem;
+      }
+      &.octopus {
+        max-width: 20rem;
+      }
+      &.owl {
+        max-width: 24rem;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .title {
+      h2 {
+        font-size: 23.1rem;
+        letter-spacing: 9.41px;
+      }
+    }
+    p {
+      max-width: 40rem;
+    }
+    .illustra {
+      &.hawk {
+        max-width: 15rem;
+      }
+      &.tiger {
+        max-width: 21rem;
+      }
+      &.octopus {
+        max-width: 14rem;
+      }
+      &.owl {
+        max-width: 19rem;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    padding-top: 4rem;
+    padding-bottom: 49rem;
+    .title {
+      margin-bottom: 2.7rem;
+      h2 {
+        font-size: 14.1rem;
+        letter-spacing: 5.41px;
+        margin-bottom: 1rem;
+        span {
+          font-size: 2rem;
+          letter-spacing: 4.6px;
+        }
+      }
+    }
+    p {
+      font-size: 1.3rem;
+      max-width: 100%;
+      margin-bottom: 2.7rem;
+    }
+    .illustra {
+      &.hawk {
+        max-width: 16.4rem;
+        top: initial;
+        left: -2.5rem;
+        bottom: 13.5rem;
+      }
+      &.tiger {
+        max-width: 17.5rem;
+        bottom: 0;
+        left: 0;
+      }
+      &.octopus {
+        max-width: 14.9rem;
+        top: initial;
+        bottom: 12.1rem;
+        right: 0;
+      }
+      &.owl {
+        max-width: 16.8rem;
+        bottom: -3px;
+        right: 0;
+      }
+    }
+  }
 }

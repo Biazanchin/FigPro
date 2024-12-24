@@ -65,4 +65,29 @@
       }
     }
   }
+  @media (max-width: 1200px) {
+    .splide-wrapper .splide__slide {
+      margin-top: 12rem;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 20rem;
+    padding-bottom: 6rem;
+    .title .subtitle {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .splide-wrapper {
+      .splide__arrow {
+        width: 30px;
+        height: 30px;
+      }
+      .splide__slide {
+        margin-top: 10rem;
+      }
+    }
+  }
 }
