@@ -16,6 +16,7 @@
 body {
   background-color: var(--WHITE);
   color: var(--BLACK-PRIMARY);
+  scroll-behavior: smooth;
 }
 
 img {

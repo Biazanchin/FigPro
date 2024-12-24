@@ -29,6 +29,10 @@
           border-radius: 50%;
           background-color: var(--YELLOW);
           text-decoration: none;
+          transition: transform 0.3s ease;
+          &:hover {
+            transform: scale(1.2);
+          }
           &:hover .tooltip {
             opacity: 1;
           }

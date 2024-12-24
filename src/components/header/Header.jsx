@@ -6,7 +6,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <header>
+    <header className="fixed">
       <div className="container">
         <button className="btn-mobile">
           <img src={menu} alt="hamburguer" />

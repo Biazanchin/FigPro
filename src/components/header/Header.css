@@ -41,6 +41,12 @@ header {
     display: flex;
     align-items: center;
     gap: 3rem;
+    transition: opacity 0.3s ease;
+    button {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
   }
   @media (max-width: 560px) {
     padding: 3rem 0;
